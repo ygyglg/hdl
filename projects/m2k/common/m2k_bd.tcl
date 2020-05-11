@@ -273,6 +273,10 @@ ad_connect adc_trigger/data_valid_a axi_adc_decimate/adc_dec_valid_a
 ad_connect adc_trigger/data_b axi_adc_decimate/adc_dec_data_b
 ad_connect adc_trigger/data_valid_b axi_adc_decimate/adc_dec_valid_b
 
+ad_connect axi_adc_decimate/adc_dec_valid_a  logic_analyzer/external_valid
+ad_connect axi_adc_decimate/adc_data_rate  logic_analyzer/external_rate
+ad_connect axi_adc_decimate/adc_oversampling_en  logic_analyzer/external_decimation_en
+
 ad_connect adc_trigger/clk axi_ad9963/adc_clk
 ad_connect trigger_i adc_trigger/trigger_i
 ad_connect trigger_o adc_trigger/trigger_o
@@ -358,3 +362,4 @@ ad_cpu_interrupt ps-12 mb-13 pattern_generator_dmac/irq
 ad_cpu_interrupt ps-10 mb-14 ad9963_adc_dmac/irq
 ad_cpu_interrupt ps-9 mb-15 ad9963_dac_dmac_a/irq
 ad_cpu_interrupt ps-8 mb-16 ad9963_dac_dmac_b/irq
+
