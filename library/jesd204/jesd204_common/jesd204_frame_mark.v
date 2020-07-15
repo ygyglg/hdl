@@ -98,6 +98,7 @@ reg [DATA_PATH_WIDTH-1:0] eof_f_6[2:0];
 reg [DATA_PATH_WIDTH-1:0] sof_f_12[2:0];
 reg [DATA_PATH_WIDTH-1:0] eof_f_12[2:0];
 
+generate
 if(DATA_PATH_WIDTH == 4) begin : gen_dp_4
 initial begin
   sof_f_3[0] = {4'b1001};
@@ -268,6 +269,7 @@ always @(*) begin
    end
 end
 end
+endgenerate
 
 endmodule
 

@@ -103,6 +103,7 @@ reg [DPW_LOG2:0]                      jj;
 reg [DPW_LOG2:0]                      ll;
 
 // Support modes with F < DATA_PATH_WIDTH
+generate
 initial begin
   for(jj = 0; jj < DATA_PATH_WIDTH; jj=jj+1) begin
     prev_loc_1[jj] = DATA_PATH_WIDTH+2+jj;
@@ -125,6 +126,7 @@ initial begin
   end
 end
 end
+endgenerate
 
 always @(posedge clk) begin
   data_d1 <= data;

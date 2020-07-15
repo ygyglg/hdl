@@ -85,6 +85,7 @@ always @(posedge core_clk) begin
   end
 end
 
+generate
 if(DATA_PATH_WIDTH == 4)  begin : dp_4_gen
 always @(posedge up_clk) begin
   if (up_rreq == 1'b1) begin
@@ -98,6 +99,7 @@ always @(posedge up_clk) begin
   end
 end
 end
+endgenerate
 
 always @(posedge core_clk) begin
   if (core_ilas_config_valid == 1'b1) begin
