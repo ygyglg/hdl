@@ -62,10 +62,10 @@ ad_ip_files jesd204_rx [list \
   jesd204_rx_cgs.v \
   jesd204_rx_ctrl.v \
   jesd204_rx_lane.v \
-  jesd204_frame_mark.v \
   jesd204_rx_frame_align.v \
   jesd204_rx_constr.sdc \
   ../jesd204_common/jesd204_eof_generator.v \
+  ../jesd204_common/jesd204_frame_mark.v \
   ../jesd204_common/jesd204_lmfc.v \
   ../jesd204_common/jesd204_scrambler.v \
   ../jesd204_common/pipeline_stage.v \

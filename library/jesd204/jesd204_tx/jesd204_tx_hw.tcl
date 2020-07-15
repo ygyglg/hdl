@@ -59,6 +59,7 @@ ad_ip_files jesd204_tx [list \
   jesd204_tx_lane.v \
   jesd204_tx_constr.sdc \
   ../jesd204_common/jesd204_eof_generator.v \
+  ../jesd204_common/jesd204_frame_align_replace.v \
   ../jesd204_common/jesd204_lmfc.v \
   ../jesd204_common/jesd204_scrambler.v \
   ../jesd204_common/pipeline_stage.v \
