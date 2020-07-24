@@ -52,9 +52,9 @@ parameter VCD_FILE = "jesd204_frame_align_replace_tb.vcd";
 `include "tb_base.v"
 
 localparam DATA_PATH_WIDTH = 8;
-localparam IS_RX = 1'b0;
+localparam IS_RX = 1'b1;
 
-wire [7:0]                    cfg_octets_per_frame = 7;
+wire [7:0]                    cfg_octets_per_frame = 5;
 wire                          cfg_disable_char_replacement = 1'b0;
 wire                          cfg_disable_scrambler = 1'b1;
 reg [DATA_PATH_WIDTH*8-1:0]   data;

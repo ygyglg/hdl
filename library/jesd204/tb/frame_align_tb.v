@@ -54,7 +54,7 @@ module frame_align_tb;
   parameter N = 16;
   parameter NP = 16;
   parameter HIGH_DENSITY = 1'b0;
-  parameter ENABLE_SCRAMBLER = 1;
+  parameter ENABLE_SCRAMBLER = 0;
   parameter BUFFER_EARLY_RELEASE = 1;
   parameter SYSREF_DISABLE = 1;
   parameter SYSREF_ONE_SHOT = 0;
